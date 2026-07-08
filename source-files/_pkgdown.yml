@@ -1,0 +1,10 @@
+destination: ../docs/
+
+url: https://jacobbien.github.io/jsm2026-project/
+template:
+  bootstrap: 5
+
+navbar:
+  structure:
+    left:  [reference, articles, search]
+    right: [github]

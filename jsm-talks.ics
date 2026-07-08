@@ -1,0 +1,175 @@
+BEGIN:VCALENDAR
+PRODID:-//ATFutures/ical //EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/New_York
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ical-15222d37-aff6-48bb-aa3e-fb544721a486
+DTSTART;TZID=America/New_York:20260802T140500
+DTEND;TZID=America/New_York:20260802T142500
+SUMMARY:Ali Shojaie: Inferring gene regulatory networks from single cell multi-omics data
+LOCATION:CC-258A
+DESCRIPTION:Authors: Ali Shojaie\nSession: <a href='ww3.aievolution.com/JSMAnnual2026/Events/viewEv?ev=6115' target='_blank'>Novel Approaches for the Analyses of Next-Generation Modern Omics Data</a> (Topic-Contributed Paper Session)\nChair: Eun Jeong Oh
+END:VEVENT
+BEGIN:VEVENT
+UID:ical-c4152426-8787-44e5-9d4c-c7946cd7e4e4
+DTSTART;TZID=America/New_York:20260802T150500
+DTEND;TZID=America/New_York:20260802T152000
+SUMMARY:Yijin Wang: Permutation Testing for Interaction Effect in Functional Mixed Model
+LOCATION:CC-212
+DESCRIPTION:Authors: Yijin Wang, Todd Ogden\nSession: <a href='ww3.aievolution.com/JSMAnnual2026/Events/viewEv?ev=7080' target='_blank'>Functional Data Analysis: Regression, Latent Structure, and Inference</a> (Contributed Papers)\nChair: Wookyeong Song
+END:VEVENT
+BEGIN:VEVENT
+UID:ical-0c642dc2-77c2-4c45-a3c7-4109ef7e2342
+DTSTART;TZID=America/New_York:20260802T163000
+DTEND;TZID=America/New_York:20260802T165500
+SUMMARY:Larry Wasserman: Robust COWs
+LOCATION:CC-210A
+DESCRIPTION:Authors: Larry Wasserman\nSession: <a href='ww3.aievolution.com/JSMAnnual2026/Events/viewEv?ev=5552' target='_blank'>When Models Fail: Novel Theory, Methodology and Foundations for Inference, Prediction and Stability</a> (Invited Paper Session)\nChair: Minge Xie
+END:VEVENT
+BEGIN:VEVENT
+UID:ical-07b7bb10-2be4-4aa0-93b4-ab678c8661b7
+DTSTART;TZID=America/New_York:20260802T172000
+DTEND;TZID=America/New_York:20260802T174500
+SUMMARY:Bin Yu: Tackling a " hidden universe of uncertainty" through veridical data science
+LOCATION:CC-210A
+DESCRIPTION:Authors: Bin Yu\nSession: <a href='ww3.aievolution.com/JSMAnnual2026/Events/viewEv?ev=5552' target='_blank'>When Models Fail: Novel Theory, Methodology and Foundations for Inference, Prediction and Stability</a> (Invited Paper Session)\nChair: Minge Xie
+END:VEVENT
+BEGIN:VEVENT
+UID:ical-1898f7bb-9cd1-4282-802b-fb13605fc206
+DTSTART;TZID=America/New_York:20260803T085500
+DTEND;TZID=America/New_York:20260803T091500
+SUMMARY:David Matteson: Network Modeling of Large-scale Time Series with Cumulative Impulse Response Functions
+LOCATION:CC-253C
+DESCRIPTION:Authors: David Matteson\nSession: <a href='ww3.aievolution.com/JSMAnnual2026/Events/viewEv?ev=5584' target='_blank'>Dynamics at Scale: Statistical Frontiers in High-Dimensional and Streaming Time Series</a> (Invited Paper Session)\nChair: 
+END:VEVENT
+BEGIN:VEVENT
+UID:ical-a371cfdc-242a-48be-8863-11103690a146
+DTSTART;TZID=America/New_York:20260803T090000
+DTEND;TZID=America/New_York:20260803T092500
+SUMMARY:Shuangge Ma: Cancer Human Disease Networks (cHDNs) via Deep Learning SEER-Medicare
+LOCATION:CC-204B
+DESCRIPTION:Authors: Shuangge Ma\nSession: <a href='ww3.aievolution.com/JSMAnnual2026/Events/viewEv?ev=5268' target='_blank'>Applications of Deep Learning in Biomedical Research</a> (Invited Paper Session)\nChair: Subharup Guha
+END:VEVENT
+BEGIN:VEVENT
+UID:ical-9f097c28-3946-4f3a-9cc7-d89d35245b7b
+DTSTART;TZID=America/New_York:20260803T105500
+DTEND;TZID=America/New_York:20260803T111500
+SUMMARY:Arkajyoti Saha: Structure-Aware Resampling and Inference for Correlated Spatial Data
+LOCATION:CC-103
+DESCRIPTION:Authors: Arkajyoti Saha\nSession: <a href='ww3.aievolution.com/JSMAnnual2026/Events/viewEv?ev=6047' target='_blank'>Recent Developments of Resampling Methods for Complex Data</a> (Topic-Contributed Paper Session)\nChair: Hyemin Yeon
+END:VEVENT
+BEGIN:VEVENT
+UID:ical-a9e6c292-8425-4d8e-a6d0-86cf328abbb6
+DTSTART;TZID=America/New_York:20260803T143000
+DTEND;TZID=America/New_York:20260803T145500
+SUMMARY:Binyan Jiang: Dynamic Networks with Node Heterogeneity and Homophily
+LOCATION:CC-253B
+DESCRIPTION:Authors: Binyan Jiang, Qiwei Yao\nSession: <a href='ww3.aievolution.com/JSMAnnual2026/Events/viewEv?ev=5906' target='_blank'>Network Time-Series: Modeling, Inference, and Applications</a> (Invited Paper Session)\nChair: Sharmodeep Bhattacharyya
+END:VEVENT
+BEGIN:VEVENT
+UID:ical-afe435a3-c57e-48ba-8178-0a2645c1e6ca
+DTSTART;TZID=America/New_York:20260804T103000
+DTEND;TZID=America/New_York:20260804T122000
+SUMMARY:Bin Yu, Kimberly Sellers: Discussion of 'Ethical, High-Impact Communication of Concepts and Results in Statistics and Data Science'
+LOCATION:CC-102A
+DESCRIPTION:Authors: Bin Yu, Kimberly Sellers\nSession: <a href='ww3.aievolution.com/JSMAnnual2026/Events/viewEv?ev=5278' target='_blank'>Ethical, High-Impact Communication of Concepts and Results in Statistics and Data Science</a> (Invited Paper Session)\nChair: Ruobin Gong
+END:VEVENT
+BEGIN:VEVENT
+UID:ical-befc8e39-765a-41e1-80b4-3a56b284f5ed
+DTSTART;TZID=America/New_York:20260804T115500
+DTEND;TZID=America/New_York:20260804T121500
+SUMMARY:Andee Kaplan: Scaling Bayesian Record Linkage for Streaming Contexts
+LOCATION:CC-105
+DESCRIPTION:Authors: Andee Kaplan, Ian Taylor, Brenda Betancourt\nSession: <a href='ww3.aievolution.com/JSMAnnual2026/Events/viewEv?ev=6310' target='_blank'>Modern Record Linkage Techniques for a Complex and Ever-changing World</a> (Topic-Contributed Paper Session)\nChair: Maryclare Griffin
+END:VEVENT
+BEGIN:VEVENT
+UID:ical-300312af-2383-412a-98ea-1ed044b6c54b
+DTSTART;TZID=America/New_York:20260804T160500
+DTEND;TZID=America/New_York:20260804T162500
+SUMMARY:Jian Huang: Presentation
+LOCATION:CC-253C
+DESCRIPTION:Authors: Jian Huang\nSession: <a href='ww3.aievolution.com/JSMAnnual2026/Events/viewEv?ev=5660' target='_blank'>Statistics and Large Language Models: Insights from The American Statistician Discussion Papers</a> (Invited Paper Session)\nChair: Minge Xie
+END:VEVENT
+BEGIN:VEVENT
+UID:ical-5e9901f1-039a-45fc-be97-77d4315ad2ee
+DTSTART;TZID=America/New_York:20260805T093500
+DTEND;TZID=America/New_York:20260805T095500
+SUMMARY:Aditya Mishra: Modeling Covariate-Driven Microbiome Transport via Adaptive Optimal Transport Costs
+LOCATION:CC-208
+DESCRIPTION:Authors: Aditya Mishra, Dipak Dey, Christine Peterson\nSession: <a href='ww3.aievolution.com/JSMAnnual2026/Events/viewEv?ev=6236' target='_blank'>Statistical Frontiers in Microbiome and Multi-Omics Data Analysis</a> (Topic-Contributed Paper Session)\nChair: Dipak Dey
+END:VEVENT
+BEGIN:VEVENT
+UID:ical-f60c0a13-3d21-41a7-8858-571f7cb1e0c4
+DTSTART;TZID=America/New_York:20260805T105000
+DTEND;TZID=America/New_York:20260805T110500
+SUMMARY:Xiaozhu Zhang: Convex Mixed-Integer Programming for Non-Linear Causal Discovery
+LOCATION:CC-254B
+DESCRIPTION:Authors: Xiaozhu Zhang, Nir Keret, Ali Shojaie, Armeen Taeb\nSession: <a href='ww3.aievolution.com/JSMAnnual2026/Events/viewEv?ev=7117' target='_blank'>Structural Learning for Graphical Models</a> (Contributed Papers)\nChair: Haoyue Li
+END:VEVENT
+BEGIN:VEVENT
+UID:ical-8bf402a9-199e-4cd5-b9d3-0277e6a474a9
+DTSTART;TZID=America/New_York:20260805T112500
+DTEND;TZID=America/New_York:20260805T115000
+SUMMARY:Gourab Mukherjee: Nonparametric Empirical Bayes Estimation On Heterogeneous Data
+LOCATION:CC-210C
+DESCRIPTION:Authors: Gourab Mukherjee\nSession: <a href='ww3.aievolution.com/JSMAnnual2026/Events/viewEv?ev=5287' target='_blank'>Advances in Methods for Integrating Heterogeneous Health Data</a> (Invited Paper Session)\nChair: Fei Xue
+END:VEVENT
+BEGIN:VEVENT
+UID:ical-3ee83313-9932-4791-a9e5-c217d3583817
+DTSTART;TZID=America/New_York:20260805T120500
+DTEND;TZID=America/New_York:20260805T122000
+SUMMARY:Ameer Dharamshi: Testing hypotheses via orthogonalization
+LOCATION:CC-252A
+DESCRIPTION:Authors: Ameer Dharamshi, Runjia Zou, Daniela Witten\nSession: <a href='ww3.aievolution.com/JSMAnnual2026/Events/viewEv?ev=7128' target='_blank'>Hypothesis Testing and AI-Assisted Inference</a> (Contributed Papers)\nChair: Heng Ge
+END:VEVENT
+BEGIN:VEVENT
+UID:ical-290051de-5de5-423d-826c-afb3da7c6a5d
+DTSTART;TZID=America/New_York:20260805T152500
+DTEND;TZID=America/New_York:20260805T154500
+SUMMARY:Aaron Molstad: Unified approaches to spatial domain detection and cell-type deconvolution in spot-based spatial transcriptomics
+LOCATION:CC-107C
+DESCRIPTION:Authors: Aaron Molstad\nSession: <a href='ww3.aievolution.com/JSMAnnual2026/Events/viewEv?ev=6501' target='_blank'>Modern Statistical Tools for Understanding Spatially Structured Molecular Data</a> (Topic-Contributed Paper Session)\nChair: Zitian Wu
+END:VEVENT
+BEGIN:VEVENT
+UID:ical-76bf0dbb-d23a-42ce-b176-40235e9c9b59
+DTSTART;TZID=America/New_York:20260805T160500
+DTEND;TZID=America/New_York:20260805T175000
+SUMMARY:Larry Wasserman: Causal Inference Meets Optimal Transport
+LOCATION:CC-Ballroom East/West
+DESCRIPTION:Authors: Larry Wasserman\nSession: <a href='ww3.aievolution.com/JSMAnnual2026/Events/viewEv?ev=8094' target='_blank'>COPSS Distinguished Achievement Award and Lectureship</a> (Invited Paper Session)\nChair: Rebecca Hubbard
+END:VEVENT
+BEGIN:VEVENT
+UID:ical-b17823cc-7606-495f-b6a4-4a3fafd3d7e7
+DTSTART;TZID=America/New_York:20260806T093500
+DTEND;TZID=America/New_York:20260806T095500
+SUMMARY:Luo Xiao: Functional joint model with baseline functional covariate: application to objective physical activity data
+LOCATION:CC-210C
+DESCRIPTION:Authors: Luo Xiao\nSession: <a href='ww3.aievolution.com/JSMAnnual2026/Events/viewEv?ev=5710' target='_blank'>Innovations in Functional Data Methods for Large-Scale Biomedical and Wearable data</a> (Invited Paper Session)\nChair: Quy Cao
+END:VEVENT
+BEGIN:VEVENT
+UID:ical-692adbd6-713e-43ad-80b0-43f16650c4fa
+DTSTART;TZID=America/New_York:20260806T111500
+DTEND;TZID=America/New_York:20260806T113500
+SUMMARY:Sumanta Basu: Frequency-domain graphical models for multivariate time series
+LOCATION:CC-156C
+DESCRIPTION:Authors: Sumanta Basu\nSession: <a href='ww3.aievolution.com/JSMAnnual2026/Events/viewEv?ev=5400' target='_blank'>Learning Dependence Networks in Space, Time, and Frequency</a> (Invited Paper Session)\nChair: Cristian Felipe Jimenez Varon
+END:VEVENT
+END:VCALENDAR
