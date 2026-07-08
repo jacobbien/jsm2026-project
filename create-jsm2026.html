@@ -609,7 +609,7 @@ usethis::use_import_from("Matrix", "Matrix")</code></pre>
 <pre><code>## ✔ Adding "@importFrom Matrix Matrix" to 'R/jsm2026-package.R'.</code></pre>
 <pre><code>## ✔ Writing 'NAMESPACE'.</code></pre>
 <pre class="r"><code>#' JSM author names
-#' @format A character vector of 15,406 names from past and present JSMs
+#' @format A character vector of `r length(authors)` names from past and present JSMs
 #' @source This data was from the JSM 2022-2026 programs.
 "authors"</code></pre>
 <pre><code>## [1] "authors"</code></pre>
@@ -624,7 +624,7 @@ only those people who are actually giving talks in 2026. (E.g., it’s not
 useful to see the name of a coauthor of mine if they aren’t presenting
 at JSM this year!)</p>
 <pre class="r"><code>#' JSM author names for this year
-#' @format A character vector of `length(authors_thisyear)` author names
+#' @format A character vector of `r length(authors_thisyear)` author names
 #' @source This data was from the JSM 2026 program.
 "authors_thisyear"</code></pre>
 <pre><code>## [1] "authors_thisyear"</code></pre>
@@ -695,7 +695,7 @@ at JSM this year!)</p>
     c(6, 3, 5, 7)
   )
 })</code></pre>
-<pre><code>## Test passed with 1 success 🎊.</code></pre>
+<pre><code>## Test passed with 1 success 🎉.</code></pre>
 <pre class="r"><code>#' Return the JSM authors who are co-authors
 #' 
 #' @param name name of a JSM author
@@ -708,7 +708,7 @@ at JSM this year!)</p>
     return(character(0))
   }
   ii_coa &lt;- <a href="create-jsm2026.html#ordered_nz">ordered_nz</a>(jsm2026::coauthor[ii, ])
-  intersect(jsm2026::authors[ii_coa], jsm2026::authors2026)
+  intersect(jsm2026::authors[ii_coa], jsm2026::authors_thisyear)
 }</code></pre>
 <p>And let’s put in a test.</p>
 <pre class="r"><code>testthat::test_that("<a href="create-jsm2026.html#get_coauthors">get_coauthors</a>() works", {
@@ -738,7 +738,7 @@ at JSM this year!)</p>
     # start with author's own cites and follow with those of coauthors:
     ii_cites &lt;- c(ii_cites, setdiff(ii_coa_cites, ii_cites))
   }
-  intersect(jsm2026::authors[ii_cites], jsm2026::authors2026)
+  intersect(jsm2026::authors[ii_cites], jsm2026::authors_thisyear)
 }</code></pre>
 <pre class="r"><code>#' Return the JSM authors that cite this JSM author
 #' 
@@ -764,7 +764,7 @@ at JSM this year!)</p>
     # start with author's own cites and follow with those of coauthors:
     ii_cites &lt;- c(ii_cites, setdiff(ii_coa_cites, ii_cites))
   }
-  intersect(jsm2026::authors[ii_cites], jsm2026::authors2026)
+  intersect(jsm2026::authors[ii_cites], jsm2026::authors_thisyear)
 }</code></pre>
 <p>And let’s test these functions.</p>
 <pre class="r"><code>testthat::test_that("get_*_citations() works", {
@@ -991,7 +991,9 @@ that we can have a link to it on our pkgdown site.</p>
 ## Writing `404.html`
 ## ── Building function reference ─────────────────────────────────────────────────
 ## Reading man/authors.Rd
+## Writing `reference/authors.html`
 ## Reading man/authors_thisyear.Rd
+## Writing `reference/authors_thisyear.html`
 ## Reading man/cites.Rd
 ## Reading man/coauthor.Rd
 ## Reading man/export_calendar_to_csv.Rd

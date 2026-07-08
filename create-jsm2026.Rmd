@@ -301,7 +301,7 @@ usethis::use_import_from("Matrix", "Matrix")
 
 ```{r}
 #' JSM author names
-#' @format A character vector of 15,406 names from past and present JSMs
+#' @format A character vector of `r length(authors)` names from past and present JSMs
 #' @source This data was from the JSM 2022-2026 programs.
 "authors"
 ```
@@ -316,7 +316,7 @@ There are `r length(authors_thisyear)` authors in this year's JSM.  We will want
 
 ```{r}
 #' JSM author names for this year
-#' @format A character vector of `length(authors_thisyear)` author names
+#' @format A character vector of `r length(authors_thisyear)` author names
 #' @source This data was from the JSM 2026 program.
 "authors_thisyear"
 ```
@@ -417,7 +417,7 @@ get_coauthors <- function(name) {
     return(character(0))
   }
   ii_coa <- ordered_nz(jsm2026::coauthor[ii, ])
-  intersect(jsm2026::authors[ii_coa], jsm2026::authors2026)
+  intersect(jsm2026::authors[ii_coa], jsm2026::authors_thisyear)
 }
 ```
 
@@ -454,7 +454,7 @@ get_out_citations <- function(name, augment = FALSE) {
     # start with author's own cites and follow with those of coauthors:
     ii_cites <- c(ii_cites, setdiff(ii_coa_cites, ii_cites))
   }
-  intersect(jsm2026::authors[ii_cites], jsm2026::authors2026)
+  intersect(jsm2026::authors[ii_cites], jsm2026::authors_thisyear)
 }
 ```
 
@@ -484,7 +484,7 @@ get_in_citations <- function(name, augment = FALSE) {
     # start with author's own cites and follow with those of coauthors:
     ii_cites <- c(ii_cites, setdiff(ii_coa_cites, ii_cites))
   }
-  intersect(jsm2026::authors[ii_cites], jsm2026::authors2026)
+  intersect(jsm2026::authors[ii_cites], jsm2026::authors_thisyear)
 }
 ```
 

@@ -10,7 +10,7 @@ authors
 
 ## Format
 
-A character vector of 15,406 names from past and present JSMs
+A character vector of 18116 names from past and present JSMs
 
 ## Source
 

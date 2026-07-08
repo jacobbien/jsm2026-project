@@ -12,5 +12,5 @@ get_coauthors <- function(name) {
     return(character(0))
   }
   ii_coa <- ordered_nz(jsm2026::coauthor[ii, ])
-  intersect(jsm2026::authors[ii_coa], jsm2026::authors2026)
+  intersect(jsm2026::authors[ii_coa], jsm2026::authors_thisyear)
 }

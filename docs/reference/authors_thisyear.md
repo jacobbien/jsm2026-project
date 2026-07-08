@@ -10,7 +10,7 @@ authors_thisyear
 
 ## Format
 
-A character vector of `length(authors_thisyear)` author names
+A character vector of 5961 author names
 
 ## Source
 
