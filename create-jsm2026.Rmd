@@ -257,7 +257,7 @@ Quite a lot of work went into obtaining and processing coauthorship and citation
 
 2. Semantic Scholar (S2)'s bulk data sets (on papers, authors, and citations), in which we started with about 200M papers and filtered down to about 460K papers (written by about 638K authors) by restricting attention to papers in statistics journals or having the arxiv stat.XX tag.
 
-3. The JSM 2026 program itself, along with the list of authors that was scraped from JSM 2022--2025.  There are `r length(authors)` names in total.
+3. The JSM 2026 program itself, along with the list of authors that was scraped from JSM 2022-2025.  There are `r length(authors)` names in total.
 
 The S2 citation data can be thought of as a paper-cites-paper matrix.  We computed from this an author-cites-author matrix.  We then mapped S2 authors to JSM authors.  Entity matching and fusion approaches were used to map the Arxiv and S2 author names to JSM author names.  This is important and challenging since authors publish under many variations of their name (e.g. First Last, First Middle Last, F. Last, First M. Last, etc.) and since multiple people can have the same first and last name.
 

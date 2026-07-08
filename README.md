@@ -1,4 +1,4 @@
-# jsm2025-project
+# jsm2026-project
 
 This R package is created using literate programming with the  [litr](https://github.com/jacobbien/litr-project/tree/main/litr) R package.  Please see [jsm2026](jsm2026) for the generated R package itself.
 
