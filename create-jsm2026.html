@@ -457,22 +457,22 @@ we can offer some helpful functions.</p>
   talks &lt;- jsm2026::talks
   if (!missing(speakers)) {
     pattern &lt;- paste(speakers, collapse = "|") %&gt;% 
-      stringr::str_replace("\\(", "\\\\(") %&gt;% # escape parentheses in names
-      stringr::str_replace("\\)", "\\\\)")
+      stringr::str_replace_all("\\(", "\\\\(") %&gt;% # escape parentheses in names
+      stringr::str_replace_all("\\)", "\\\\)")
     if (!(pattern %in% c("", "NA")))
       talks &lt;- talks %&gt;% dplyr::filter(stringr::str_detect(.data$speaker, pattern))
   }
   if (!missing(authors)) {
     pattern &lt;- paste(authors, collapse = "|") %&gt;% 
-      stringr::str_replace("\\(", "\\\\(") %&gt;% # escape parentheses in names
-      stringr::str_replace("\\)", "\\\\)")
+      stringr::str_replace_all("\\(", "\\\\(") %&gt;% # escape parentheses in names
+      stringr::str_replace_all("\\)", "\\\\)")
     if (!(pattern %in% c("", "NA")))
       talks &lt;- talks %&gt;% dplyr::filter(stringr::str_detect(.data$author, pattern))
   }
   if (!missing(people)) {
     pattern &lt;- paste(people, collapse = "|") %&gt;% 
-      stringr::str_replace("\\(", "\\\\(") %&gt;% # escape parentheses in names
-      stringr::str_replace("\\)", "\\\\)")
+      stringr::str_replace_all("\\(", "\\\\(") %&gt;% # escape parentheses in names
+      stringr::str_replace_all("\\)", "\\\\)")
     if (!(pattern %in% c("", "NA")))
       talks &lt;- talks %&gt;% 
         dplyr::filter(
@@ -695,7 +695,7 @@ at JSM this year!)</p>
     c(6, 3, 5, 7)
   )
 })</code></pre>
-<pre><code>## Test passed with 1 success 🎉.</code></pre>
+<pre><code>## Test passed with 1 success 😸.</code></pre>
 <pre class="r"><code>#' Return the JSM authors who are co-authors
 #' 
 #' @param name name of a JSM author
@@ -991,9 +991,7 @@ that we can have a link to it on our pkgdown site.</p>
 ## Writing `404.html`
 ## ── Building function reference ─────────────────────────────────────────────────
 ## Reading man/authors.Rd
-## Writing `reference/authors.html`
 ## Reading man/authors_thisyear.Rd
-## Writing `reference/authors_thisyear.html`
 ## Reading man/cites.Rd
 ## Reading man/coauthor.Rd
 ## Reading man/export_calendar_to_csv.Rd

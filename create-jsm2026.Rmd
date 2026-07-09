@@ -162,22 +162,22 @@ get_talks <- function(speakers, authors, people, keywords, days, session_types) 
   talks <- jsm2026::talks
   if (!missing(speakers)) {
     pattern <- paste(speakers, collapse = "|") %>% 
-      stringr::str_replace("\\(", "\\\\(") %>% # escape parentheses in names
-      stringr::str_replace("\\)", "\\\\)")
+      stringr::str_replace_all("\\(", "\\\\(") %>% # escape parentheses in names
+      stringr::str_replace_all("\\)", "\\\\)")
     if (!(pattern %in% c("", "NA")))
       talks <- talks %>% dplyr::filter(stringr::str_detect(.data$speaker, pattern))
   }
   if (!missing(authors)) {
     pattern <- paste(authors, collapse = "|") %>% 
-      stringr::str_replace("\\(", "\\\\(") %>% # escape parentheses in names
-      stringr::str_replace("\\)", "\\\\)")
+      stringr::str_replace_all("\\(", "\\\\(") %>% # escape parentheses in names
+      stringr::str_replace_all("\\)", "\\\\)")
     if (!(pattern %in% c("", "NA")))
       talks <- talks %>% dplyr::filter(stringr::str_detect(.data$author, pattern))
   }
   if (!missing(people)) {
     pattern <- paste(people, collapse = "|") %>% 
-      stringr::str_replace("\\(", "\\\\(") %>% # escape parentheses in names
-      stringr::str_replace("\\)", "\\\\)")
+      stringr::str_replace_all("\\(", "\\\\(") %>% # escape parentheses in names
+      stringr::str_replace_all("\\)", "\\\\)")
     if (!(pattern %in% c("", "NA")))
       talks <- talks %>% 
         dplyr::filter(
