@@ -5,7 +5,7 @@
 \alias{authors_thisyear}
 \title{JSM author names for this year}
 \format{
-A character vector of 5961 author names
+A character vector of 5946 author names
 }
 \source{
 This data was from the JSM 2026 program.

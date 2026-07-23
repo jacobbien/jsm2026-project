@@ -10,7 +10,7 @@ words
 
 ## Format
 
-A character vector of 18020 words
+A character vector of 17996 words
 
 ## Source
 
