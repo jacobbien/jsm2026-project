@@ -5,7 +5,7 @@
 \alias{authors}
 \title{JSM author names}
 \format{
-A character vector of 18110 names from past and present JSMs
+A character vector of 18104 names from past and present JSMs
 }
 \source{
 This data was from the JSM 2022-2026 programs.

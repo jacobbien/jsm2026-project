@@ -10,7 +10,7 @@ authors_thisyear
 
 ## Format
 
-A character vector of 5946 author names
+A character vector of 5931 author names
 
 ## Source
 

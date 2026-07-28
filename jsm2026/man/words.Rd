@@ -5,7 +5,7 @@
 \alias{words}
 \title{Words used in this year's JSM titles and abstracts}
 \format{
-A character vector of 17996 words
+A character vector of 17990 words
 }
 \source{
 From this year's JSM program.
